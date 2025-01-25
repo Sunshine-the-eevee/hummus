@@ -1,25 +1,111 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8" />
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="https://hmus.sys42.net/assets/8c3ff237e4512102354c.css">
-  <link rel="icon" href="https://hmus.sys42.net/assets/07dca80a102d4149e9736d4b162cff6f.ico" />
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAA8RJREFUWEftV0tME2sU/maGlmm1VEDelIeF2PqI7+QudGFCbu7iGmOMLoxiNOhKoyKNiY+VjxgLGI0bvCbGx0rvM/dq4nthjDFRIwtpCVSgWORZUwqdPpgZ84926NDSDtqrLjybtvOf/5zv/8453z+l8Mk23RCZMrfzCETsA5ATfZ7mTy8onHOXW...LHeoA2Bss8i1F9JnjeOlkMzHSD1oNLfcCiWNrdKoDYNtRqTgFoY+csLxIh3kmfVJxcr/j4OoNoLJUj4oYlgZGQrBfVlkCw6wMkEY0m/QyYqJoL9t8+Ov+AEoLWeTnaKFnGdA00YyPoyaxYKcpXgiSMp4bELHeoA2Bss8i1F9JnjeOlkMzHSD1oNLfcCiWNrdKoDYNtRqTgFoY+csLxIh3kmfVJxcr/j4OoNoLJUj4oYlg==">
   <title>hummus 2</title>
 </head>
 <body>
-  <div id="app-mount"></div>
-  <script>
-    window.__require = window.require;
-    window.__OVERLAY__ = window.overlay != null
 
-    // hummus environment 
-    window.CLIENT_ENV = {api:"//hummus.sys42.net/api",api_1:"hummus.sys42.net",cdn:"hcdn.sys42.net",dis:"notexist",support:"https://notexist",blog:"blog.discordapp.com",domain:"hummus.sys42.net",env:"production",twitter:"?1",status:"discordstatus.com",crash:"notreal",invite_url:"hummus.sys42.net/invite",stripe_key:"pk_test_51GsU4DAZBpiR6vL6iGHN5kTL3Lbr35S9996qKiktolXgEMWy1MvmSec2FHeu4CKIK0u0BD4xn3K4xAwAryr3kIBK00o8pupGCw",recaptcha_key:"6Leqz9UUAAAAAP5qSNIOiohsP5FFX5a5Ck7Tqp0C",time:1737760380380}
+<div id="app-mount">
+  <div data-reactroot="">
+    <div class="titlebar">
+      <div class="titlebar-edge"></div>
+    </div>
 
-    // Fast Connect
-    !function(){if(null!=window.WebSocket){var n=function(n){try{var o=localStorage.getItem(n);return null==o?null:JSON.parse(o)}catch(n){return null}},o=n("token"),e=n("gatewayURL");if(o&&e){var t=null!=window.__require?"etf":"json",l=e+"/?encoding="+t+"&v=6";console.log("%c[FAST CONNECT]","font-weight: bold; color: purple;",l+", encoding: "+t+", version: 6");var r=new WebSocket(l);r.binaryType="arraybuffer";var a=Date.now(),c={open:!1,gateway:l,messages:[]};r.onopen=function(){console.log("%c[FAST CONNECT]","font-weight: bold; color: purple;","connected in "+(Date.now()-a)+"ms"),c.open=!0},r.onclose=r.onerror=function(){window._ws=null},r.onmessage=function(n){c.messages.push(n)},window._ws={ws:r,state:c}}}}();
-  </script>
-  <script src="https://hmus.sys42.net/assets/3f86729896ed9c76b98a.js"></script>
-  <script src="https://hmus.sys42.net/assets/8c3ff237e4512102354c.js"></script>
+    <div class="auth-wrap-background visible">
+      <div class="auth-tiling-bg" style="background-image: url(&quot;https://hmus.sys42.net/assets/80bebd88344f603ad8e402de7c52ef6b.png&quot;)"></div>
+      <div class="auth-wrap-background visible">
+        <div class="auth-background" style="background-image: url(&quot;https://hmus.sys42.net/assets/fa7ba7a4c3d8665d3343fee590382bb9.jpg&quot;)"></div>
+      </div>
+
+      <div class="auth-center">
+        <div class="auth-blur" style="width: 628px; height: 434px;">
+          <div class="auth-tiling-bg"></div>
+          <div class="auth-tiling-bg" style="background-image: url(&quot;https://hmus.sys42.net/assets/80bebd88344f603ad8e402de7c52ef6b.png&quot;)"></div>
+          <div class="auth-wrap-background visible">
+            <div class="auth-background" style="background-image: url(&quot;https://hmus.sys42.net/assets/fa7ba7a4c3d8665d3343fee590382bb9.jpg&quot;)"></div>
+          </div>
+        </div>
+        <div class="auth-inner">
+          <div class="auth-brand">
+            <div class="auth-brand-inner">
+              <div class="auth-logo"></div>
+              <div class="auth-name"></div>
+            </div>
+          </div>
+
+          <form class="auth-form form">
+            <h1>Welcome back.</h1>
+            <div class="control-group">
+              <label for="register-email">Email</label>
+              <input type="email" id="register-email" autocomplete="off" spellcheck="false">
+            </div>
+            <div class="control-group">
+              <label for="register-password">Password</label>
+              <input type="password" id="register-password" autocomplete="off" spellcheck="false">
+              <button class="btn-forgot-password" type="button">Forgot Your Password?</button>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+            <footer>
+              Need an account? <a href="https://sunshine-the-eevee.github.io/hummus/register">Register</a>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </div>
+    <span class="incoming-calls"></span>
+  </div>
+</div>
+
+<script>
+  window.__require = window.require;
+  window.__OVERLAY__ = window.overlay != null;
+
+  window.CLIENT_ENV = {
+    api: "//hummus.sys42.net/api",
+    api_1: "hummus.sys42.net",
+    cdn: "hcdn.sys42.net",
+    dis: "notexist",
+    support: "https://notexist",
+    blog: "blog.discordapp.com",
+    domain: "hummus.sys42.net",
+    env: "production",
+    twitter: "?1",
+    status: "discordstatus.com",
+    crash: "notreal",
+    invite_url: "hummus.sys42.net/invite",
+    stripe_key: "pk_test_51GsU4DAZBpiR6vL6iGHN5kTL3Lbr35S9996qKiktolXgEMWy1MvmSec2FHeu4CKIK0u0BD4xn3K4xAwAryr3kIBK00o8pupGCw",
+    recaptcha_key: "6Leqz9UUAAAAAP5qSNIOiohsP5FFX5a5Ck7Tqp0C",
+    time: 1737761173889
+  };
+
+  !function(){
+    if(window.WebSocket){
+      var n = function(key){
+        try{ return JSON.parse(localStorage.getItem(key)); }
+        catch(error){ return null; }
+      }, token = n("token"), url = n("gatewayURL");
+      
+      if(token && url){
+        var enc = window.__require ? "etf" : "json",
+            wsUrl = url + "/?encoding=" + enc + "&v=6",
+            ws = new WebSocket(wsUrl);
+        
+        console.log("[FAST CONNECT]", wsUrl + ", encoding: " + enc + ", version: 6");
+        ws.onopen = function(){ console.log("[FAST CONNECT]", "connected in " + (Date.now() - a) + "ms"); }
+        ws.onclose = ws.onerror = function(){ window._ws = null; }
+        ws.onmessage = function(event){ console.log("[MESSAGE]", event.data); }
+        
+        window._ws = {ws: ws};
+      }
+    }
+  }();
+</script>
+<script src="https://hmus.sys42.net/assets/3f86729896ed9c76b98a.js"></script>
+<script src="https://hmus.sys42.net/assets/8c3ff237e4512102354c.js"></script>
+
 </body>
 </html>
